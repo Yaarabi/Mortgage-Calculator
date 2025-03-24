@@ -1,0 +1,259 @@
+body{
+    margin: 0;
+    padding: 0;
+    main{
+
+        #container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+            #input{
+                height: 90vh;
+                width: 85vw;
+                display: flex;
+                flex-direction: column;
+                font-weight: bolder;
+                a{
+                    color: hsl(200, 24%, 40%);
+                }
+                #form{
+                    color: hsl(200, 24%, 40%);
+                    height: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: space-evenly;
+                    .similar_form{
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 16%;
+                        width: 100%;
+                        input{
+                            height: 40px;
+                            width: 85vw;
+                            border-radius: 5px;
+                            outline: none;
+                            border-color: hsl(203, 41%, 72%);
+                        }
+                        /* span{
+                            position: absolute;
+                            top: 24px;
+                            left: 2px;
+                            background-color: hsl(202, 86%, 94%);
+                                height: 42px;
+                                width: 45px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                        } */
+                    }
+                    /* TO DO */
+                    .twoform{
+                        display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            height: 34%;
+                            width: 100%;
+                        .two_form{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            height: 50%;
+                            width: 100%;
+                            position: relative;
+                            input{
+                                height: 40px;
+                                width: 85vw;
+                                border-radius: 5px;
+                                border-color: hsl(203, 41%, 72%);
+                            }
+                            /* .span1{
+                                position: absolute;
+                                top: 28px;
+                                left: 109px;
+                                background-color: hsl(202, 86%, 94%);
+                                height: 38px;
+                                width: 45px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            .span2{
+                                position: absolute;
+                                top: 28px;
+                                left: 110px;
+                                background-color: hsl(202, 86%, 94%);
+                                height: 38px;
+                                width: 45px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            } */
+                            
+                        }
+                    }
+                    .unique_form{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 35%;
+                        width: 100%;
+                            .radioInput{
+                                height: 40px;
+                                width: 86vw;
+                                border-radius: 5px;
+                                border: 2px solid hsl(203, 41%, 72%);
+                                display: flex;
+                                align-items: center;
+                                color: black;
+                                font-weight: bolder;
+                                input{
+                                    width: 40px;
+                                    height: 18px;
+                                }
+                        }
+                    }
+                }
+                button{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 50px;
+                    width: 80vw;
+                    align-self: center;
+                    background-color: hsl(61, 70%, 52%);
+                    color: hsl(202, 55%, 16%);
+                    border: none;
+                    border-radius: 26px;
+                    font-weight: bolder;
+                }
+            }
+            #output{
+                background-color: hsl(202, 55%, 16%);
+                color: white;
+                height: 70vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                #result{
+                    width: 80%;
+                    height: 80%;
+                    display: none;
+                    justify-content: space-between;
+                    align-items: start;
+                    flex-direction: column;
+                    #amount{
+                        background-color: hsl(201, 57%, 12%);
+                        border-top: 3px solid hsl(61, 70%, 52%);
+                        border-radius: 5px;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        h4{
+                            width: 90%;
+                        }
+                        p{
+                            width: 90%;
+                        }
+                    }
+                }
+                
+                #beforeResult{ 
+                    display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                    p{
+                        width: 80%;
+                        color: hsl(203, 41%, 72%);
+                    }
+                }
+                }
+        }
+        
+
+    }
+}
+@media (min-width: 700px) {
+    body{
+        background-color: hsl(202, 86%, 94%);
+        main{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #container{
+                flex-wrap: nowrap;
+                width: 75%;
+                height: 75%;
+                background-color: white;
+                border-radius: 20px;
+                .tete{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 80%;
+                }
+                #input{
+                    height: 100%;
+                    width: 50%;
+                    justify-content: center;
+                    align-items: center;
+
+                    #form{
+                        width: 80%;
+                        display: flex;
+                        /* flex-wrap: wrap; */
+
+                        .similar_form{
+                            width: 100%;
+                            height: 20%;
+                            input{
+                                width: 98%;
+                                height: 40px;
+                            }
+                        }
+                        .twoform{
+                            width: 100%;
+                            height: 20%;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            .two_form{
+                                width: 48%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                input{
+                                    width: 95%;
+                                    height: 35px;
+                                }
+                            }
+                        }
+                        .unique_form{
+                            width: 100%;
+                            height: 35%;
+                            .radioInput{
+                                width: 99%;
+                            }
+                        }
+                    }
+                    button{
+                        width: 300px;
+                        display: flex;
+                        justify-self: start;
+                    }
+                }
+                #output{
+                    height: 100%;
+                    width: 50%;
+                    border-radius: 0 20px 20px 70px;
+                }
+            }
+        }
+    }
+}

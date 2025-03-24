@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div id="container">
+      <section id="input">
+        <div class="tete">
+          <h2>Mortgage Calculator</h2>
+          <a href="#" onclick="clearAll()" >Clear All</a>
+        </div>
+        <div id="form">
+            <form class="similar_form">
+              <label for="mortg-amount">Mortgage Amount</label>
+              <input type="number" name="mortg-amount" id="mortg-amount">
+              <!-- <span>$</span> -->
+            </form>
+            <div class="twoform">
+              <form class="two_form">
+                <label for="Mortage Term">Mortgage Term</label>
+                <input type="number" id="term">
+                <!-- <span class="span1">years</span> -->
+              </form>
+              <form class="two_form"> 
+                <label for="Insert Rate">Insert Rate</label>
+                <input type="number" id="average">
+                <!-- <span class="span2">%</span> -->
+              </form>
+            </div>
+            <form class="unique_form">
+              <label for="Mortage Type">Mortgage Type</label>
+              <div class="radioInput">
+                <input type="radio">Repayement
+              </div>
+              <div class="radioInput">
+                <input type="radio">Interst only
+              </div>
+            
+            
+          </form>
+        </div>
+        <button id="calcul" onclick="remplace();myResult();rest()"> <img src="/assets/images/icon-calculator.svg" alt="calculate icon">  Calculate Repayement</button>
+      </section>
+      <section id="output">
+        <div id="beforeResult">
+          <img src="/assets/images/illustration-empty.svg" alt="design">
+          <h2>Results shown here</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident blanditiis amet, asperiores eveniet repudiandae reiciendis libero</p>
+        </div>
+        <div id="result">
+          <h2>Your result</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur maxime accusantium temporibus adipisci, quam inventore.</p>
+          <div id="amount">
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>$ <span id="total"></span></p>
+            <hr style="width: 85%; color: hsl(203, 41%, 72%);">
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>$ <span id="final_amount"></span></p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
