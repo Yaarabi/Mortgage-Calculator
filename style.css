@@ -20,6 +20,7 @@ body{
                 #form{
                     color: hsl(200, 24%, 40%);
                     height: 70%;
+                    width: 86vw;
                     display: flex;
                     flex-direction: column;
                     align-items: start;
@@ -30,7 +31,6 @@ body{
                         flex-direction: column;
                         justify-content: space-between;
                         height: 16%;
-                        width: 100%;
                         input{
                             height: 40px;
                             width: 85vw;
@@ -38,17 +38,17 @@ body{
                             outline: none;
                             border-color: hsl(203, 41%, 72%);
                         }
-                        /* span{
+                        span{
                             position: absolute;
-                            top: 24px;
-                            left: 2px;
+                            top: 22px;
+                            right: 1px;
                             background-color: hsl(202, 86%, 94%);
                                 height: 42px;
-                                width: 45px;
+                                width: 47px;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-                        } */
+                        }
                     }
                     /* TO DO */
                     .twoform{
@@ -70,29 +70,17 @@ body{
                                 border-radius: 5px;
                                 border-color: hsl(203, 41%, 72%);
                             }
-                            /* .span1{
+                            span{
                                 position: absolute;
-                                top: 28px;
-                                left: 109px;
+                                top: 37%;
+                                right: -1px;
                                 background-color: hsl(202, 86%, 94%);
-                                height: 38px;
+                                height: 43px;
                                 width: 45px;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
                             }
-                            .span2{
-                                position: absolute;
-                                top: 28px;
-                                left: 110px;
-                                background-color: hsl(202, 86%, 94%);
-                                height: 38px;
-                                width: 45px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                            } */
-                            
                         }
                     }
                     .unique_form{
@@ -110,10 +98,14 @@ body{
                                 align-items: center;
                                 color: black;
                                 font-weight: bolder;
+                                cursor: pointer;
                                 input{
                                     width: 40px;
                                     height: 18px;
                                 }
+                        }
+                        .radioInput:hover{
+                            border-color: yellow;
                         }
                     }
                 }
@@ -156,8 +148,15 @@ body{
                         h4{
                             width: 90%;
                         }
-                        p{
+                        #p1{
                             width: 90%;
+                            color: hsl(61, 70%, 52%);
+                            font-size: 2rem;
+                            font-weight: bolder;
+                        }
+                        #p2{
+                            width: 90%;
+                            font-weight: bolder;
                         }
                     }
                 }
@@ -171,6 +170,8 @@ body{
                     p{
                         width: 80%;
                         color: hsl(203, 41%, 72%);
+                        line-height: 1.7;
+                        text-align: center;
                     }
                 }
                 }
@@ -178,6 +179,40 @@ body{
         
 
     }
+}
+input{
+    cursor: pointer;
+}
+#errorField{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 24.3%;
+    font-weight: 50;
+    color: red;
+}
+#errorField1{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 48%;
+    font-weight: 50;
+    color: red;
+}#errorField2{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 48%;
+    font-weight: 50;
+    color: red;
+}
+#errorField3{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 72.3%;
+    font-weight: 50;
+    color: red;
 }
 @media (min-width: 700px) {
     body{
@@ -208,14 +243,17 @@ body{
                     #form{
                         width: 80%;
                         display: flex;
-                        /* flex-wrap: wrap; */
 
                         .similar_form{
                             width: 100%;
                             height: 20%;
                             input{
                                 width: 98%;
-                                height: 40px;
+                                
+                            }
+                            span{
+                                top: 24px;
+                                right: 1px;
                             }
                         }
                         .twoform{
@@ -230,15 +268,20 @@ body{
                                 justify-content: space-between;
                                 input{
                                     width: 95%;
-                                    height: 35px;
+                                }
+                                span{
+                                    right: 2%;
+                                    top: 35%;
+                                    height: 44px;
                                 }
                             }
                         }
                         .unique_form{
                             width: 100%;
-                            height: 35%;
+                            height: 36%;
                             .radioInput{
                                 width: 99%;
+                                height: 40px;
                             }
                         }
                     }
@@ -255,5 +298,17 @@ body{
                 }
             }
         }
+    }
+    #errorField{
+        top: 38.5%;
+    }
+    #errorField1{
+        top: 52%;
+        left: 32%;
+    }#errorField2{
+        top: 52%;
+    }
+    #errorField3{
+        top: 74%;
     }
 }

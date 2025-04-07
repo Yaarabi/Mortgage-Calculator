@@ -17,53 +17,55 @@
           <h2>Mortgage Calculator</h2>
           <a href="#" onclick="clearAll()" >Clear All</a>
         </div>
-        <div id="form">
-            <form class="similar_form">
+        <form id="form">
+            <div class="similar_form">
               <label for="mortg-amount">Mortgage Amount</label>
               <input type="number" name="mortg-amount" id="mortg-amount">
-              <!-- <span>$</span> -->
-            </form>
+              <span id="span1">$</span>
+            </div>
+            <span id="errorField">This fieled is requered</span>
             <div class="twoform">
-              <form class="two_form">
+              <div class="two_form">
                 <label for="Mortage Term">Mortgage Term</label>
                 <input type="number" id="term">
-                <!-- <span class="span1">years</span> -->
-              </form>
-              <form class="two_form"> 
+                <span id="span2">years</span>
+              </div>
+              <span id="errorField1">This fieled is requered</span>
+              <div class="two_form"> 
                 <label for="Insert Rate">Insert Rate</label>
                 <input type="number" id="average">
-                <!-- <span class="span2">%</span> -->
-              </form>
+                <span id="span3">%</span>
+              </div>
             </div>
-            <form class="unique_form">
+            <span id="errorField2">This fieled is requered</span>
+            <div class="unique_form">
               <label for="Mortage Type">Mortgage Type</label>
-              <div class="radioInput">
-                <input type="radio">Repayement
+              <div id="divOfinput1" class="radioInput">
+                <input id="inputRadio" onclick="backColor()" type="radio">Repayement
               </div>
-              <div class="radioInput">
-                <input type="radio">Interst only
+              <div id="divOfinput2" class="radioInput">
+                <input onclick="backColor1()" type="radio">Interst only
               </div>
-            
-            
+            </div>
+            <span id="errorField3">This fieled is requered</span>
           </form>
-        </div>
-        <button id="calcul" onclick="remplace();myResult();rest()"> <img src="/assets/images/icon-calculator.svg" alt="calculate icon">  Calculate Repayement</button>
+        <button id="calcul" onclick="remplace();myResult();rest();error()"> <img src="/assets/images/icon-calculator.svg" alt="calculate icon">  Calculate Repayement</button>
       </section>
       <section id="output">
         <div id="beforeResult">
           <img src="/assets/images/illustration-empty.svg" alt="design">
           <h2>Results shown here</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident blanditiis amet, asperiores eveniet repudiandae reiciendis libero</p>
+          <p>Complete the form and click "calculate repayement" to see what your monthly repayment would be.</p>
         </div>
         <div id="result">
           <h2>Your result</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur maxime accusantium temporibus adipisci, quam inventore.</p>
           <div id="amount">
-            <h4>Lorem, ipsum dolor.</h4>
-            <p>$ <span id="total"></span></p>
-            <hr style="width: 85%; color: hsl(203, 41%, 72%);">
-            <h4>Lorem, ipsum dolor.</h4>
-            <p>$ <span id="final_amount"></span></p>
+            <h4>Totale monthly repayement</h4>
+            <p id="p1">$<span id="total"></span></p>
+            <hr style="width: 85%; border-color: hsl(203, 41%, 72%);">
+            <h4>Totale you'll repay over the term</h4>
+            <p id="p2">$<span id="final_amount"></span></p>
           </div>
         </div>
       </section>
